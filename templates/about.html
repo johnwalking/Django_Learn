@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1> hello world</h1>
+<p>this is about page </p>
+<p>
+{{my_text}}, {{my_number}}, {{my_list}}
+</p>
+<ul>
+{% for my_subist in my_list %}
+    <li>{{forloop.counter}}-{{my_subist}} </li>
+{% endfor %}
+</ul>
+{% endblock %}
